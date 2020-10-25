@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <!--THE PROGRAM FOR SHOWING THE CONTENT WHEN THE MOUSE IS PLACED ON IT (MOVE MOUSE ON ME )-->
+    <style>
+        .dropdown {
+            position:relative;
+            display:inline-block;
+        
+        }
+        .dropdown-content {
+        display:none;
+        position:absolute;
+        background-color:#c2e1fa;
+        min-width: 160px;
+        box-shadow:0px 8px 16px 0px rgba(0,0,0,0,2);
+        padding:12px 16px;
+        }
+        .dropdown:hover .dropdown-content{
+        display:block;
+        }
+        </style>
+        
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+        .checked {
+          color: orange;
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">  
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {display:none;}
+    </style>
+
+    <title>SITE</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--THE PROGRAM OF ZONES TO CHANGE COLOR-->
+       <style>
+    .checked {
+         color: orange;
+    }
+
+    a
+    {
+        text-decoration:none;
+        color:white;
+    }
+
+    .links
+    {
+        background-color:rgb(169, 169, 247);
+        color:white;
+    }
+    .links:hover
+    {
+        background-color:lightgray;
+        color:white;
+    }
+
+    .zoom
+    {
+        transition:transform 0.5s;
+    }
+    .zoom:hover
+    {
+        transform:scale(1.05);
+    }
+    </style>
+    <!--THE PROGRAM FOR ZOOMING THE IMAGE WHEN MOUSE ON IT  -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--the program for the showing the images fast food-->
+    <!--change the colour of blocks of offer zone -->
+    <style>
+    .mySlides {display:none;}
+    
+    .checked {
+      color: orange;
+    }
+   
+    .zoom
+    {
+    transition:transform 0.6s;
+    }
+    .zoom:hover
+    {
+    transform:scale(1.04);
+    }
+    
+    
+    .container {
+      position: relative;
+      width: 50%;
+    }
+    
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    
+    .overlay {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      background-color: #008CBA;
+      overflow: hidden;
+      width: 100%;
+      height:0;
+      transition: .5s ease;
+    }
+    
+    .container:hover .overlay {
+      bottom: 0;
+      height: 100%;
+    }
+    
+    .text {
+      white-space: nowrap; 
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+    
+    
+    .links
+    {
+    background-color:rgba(228, 248, 253, 0.904);
+    color:white;
+    }
+    .links:hover
+    {
+    background-color:rgb(97, 115, 128);
+    color:white;
+    }
+    
+    
+    a
+    {
+    text-decoration:none;
+    color:white;
+    }
+    </style>
+    
+
+   
+</head>
+<body > 
+   
+    
+    <img src="C:\Users\admin\Desktop\site\logo\logo.png" width="40" height="40">       
+    <button >  Login & signup  </button>
+    <button>More</button>
+    <div style="text-align: right; margin-right: 10%;">
+        <input type="text" placeholder="Search Products " maxlength="90%" ></div>
+    <div style="text-align: right; margin-top:-04%;">
+    <button><img src="C:\Users\admin\Desktop\site\cart\addtocart.jpg" width="50" height="50" style="padding-right: -10%;">
+        
+    </div>
+    </button>
+
+    <!--the table for the showing the content in the hover (show the sontent in the list when mouse on it-->
+    <table border="0" width="100%" bgcolor="black"  >
+        
+        <th width="20%" align="center" class="links" > 
+            <!--the colour is for the text of offer button-->
+         <div class="dropdown" style="color:rgb(44, 2, 2);"> 
+            <span><b> OFFER ZONE </b></span>
+           <div class="dropdown-content" style="color: rgb(95, 26, 32);">
+               <p>20% OFF FOR MENS</p>
+               <p>30%OFF FOR KIDS</p>
+               <p>40% OFF FOR BOYS</p>
+               <p>50% OFF FOR BABYS</p> 
+           </div>
+         </div>  
+        </th>
+
+            <th width="20%" align="center" class="links">
+                <div class="dropdown"style="color: rgb(36, 30, 30);"> 
+                    <span>BOYS </span>
+                   <div class="dropdown-content">
+                       <p>20% OFF SHIRT</p>
+                       <p>30% OFF PANTS</p>
+                       <p>40% OFF ZUBBA </p>
+                       <p>50% OFF SHIMAG</p> 
+                   </div> </th>
+           
+            <th width="20%" align="center" class="links"style="color: rgb(36, 30, 30);"> 
+                <div class="dropdown"> 
+                    <span> BABY </span>
+                   <div class="dropdown-content">
+                       <p>20% OFF SHIRT</p>
+                       <p>30% OFF PANTS</p>
+                       <p>40% OFF ZUBBA </p>
+                       <p>50% OFF SHIMAG</p> 
+                   </div>  </th>
+            <th width="20%" align="center" class="links" style="color: rgb(36, 30, 30);"> 
+                <div class="dropdown"> 
+                    <span>MENS </span>
+                   <div class="dropdown-content">
+                       <p>20% OFF SHIRT</p>
+                       <p>30% OFF PANTS</p>
+                       <p>40% OFF ZUBBA </p>
+                       <p>50% OFF SHIMAG</p> 
+                   </div> </th> 
+        </div>
+        </tr>
+    </table>
+
+   
+    
+<div class="w3-content w3-section" style="max-width:100%">
+
+
+    <img class="mySlides w3-animate-fading" src="C:\Users\admin\Desktop\site\banner\bamm.jpg" style="width:100%"height="40%">
+    <img class="mySlides w3-animate-fading" src="C:\Users\admin\Desktop\site\banner\banner.jpg" style="width:100%"height="40%">
+    <img class="mySlides w3-animate-fading" src="C:\Users\admin\Desktop\site\banner\nnm.jpg" style="width:100%" height="40%">
+    <img class="my slide w3-animate-fading" src="C:\Users\admin\Desktop\site\banner\ssrfg.jpg" style="width: fit-content;" height="95%">
+ 
+
+
+</div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 4000); // Change image every 2 seconds
+        }
+        </script>
+
+<table border="0" width="100%">
+<marquee  direction="shifting">
+    <p style="text-align: center;color: darkred;"><b><h1> SHIRT PATTERN</h1></b></p>
+</marquee>
+      
+    <tr>
+    <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\formal shirt\shirt2.jpg"  width="85%" height="125%">
+        <button onclick="document.location='https://www.aliexpress.com/i/32798975214.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+        <button onclick="document.location='https://www.aliexpress.com/i/32798975214.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+    
+        
+        <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\formal\f2.jpeg"  width="85%" height="40%">
+            <button onclick="document.location='https://www.indiamart.com/proddetail/mens-stylish-shirt-18898535912.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+        <button onclick="document.location='https://www.indiamart.com/proddetail/mens-stylish-shirt-18898535912.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+    
+    
+            <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\formal shirt\shirt.jpg" width="85%" height="115%">
+        <button onclick="document.location='https://www.aliexpress.com/item/32869352724.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+        <button onclick="document.location='https://www.aliexpress.com/item/32869352724.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+    </td>
+    </tr>
+    
+    <tr>
+    <td align="center"><b><font size="4">FORMAL SHIRT <br>NAVY BLUE</font></b></td>
+    <td align="center"><b><font size="4">FORMAL SHIRT <br> SHADED RED</font></b></td>
+    <td align="center"><b><font size="4">FORMAL SHIRT <br>OFFICE WARE</font></b></td>
+    </tr>
+    
+    <tr>
+    <td align="center">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    </td>
+    
+    <td align="center">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    </td>
+    
+    <td align="center">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    </td>
+    </tr>
+    
+    <tr>
+    <td align="center"><font size="4" color="green">Price: INR 1150/-</font></td>
+    <td align="center"><font size="4" color="green">Price: INR 1140/-</font></td>
+    <td align="center"><font size="4" color="green">Price: INR 1190/-</font></td>
+    </tr>
+    
+    
+    
+    <tr>
+    
+    <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\pants\P.jpeg"  style="border-radius: 2%;"width="85%" height="45%">
+        <button onclick="document.location='https://www.aliexpress.com/i/33005179051.html?ws_ab_test=searchweb0_0,searchweb201602_0,searchweb201603_0,ppcSwitch_0&algo_pvid=32d29b3a-7be2-4dc4-8e00-71cc7157eeaa&algo_expid=32d29b3a-7be2-4dc4-8e00-71cc7157eeaa-33'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+        <button onclick="document.location='https://www.aliexpress.com/i/33005179051.html?ws_ab_test=searchweb0_0,searchweb201602_0,searchweb201603_0,ppcSwitch_0&algo_pvid=32d29b3a-7be2-4dc4-8e00-71cc7157eeaa&algo_expid=32d29b3a-7be2-4dc4-8e00-71cc7157eeaa-33'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+    
+        <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\pants\jhg.jpeg" style="border-radius: 2%;" width="85%">
+            <button onclick="document.location='https://www.lifestylestores.com/in/en/SHOP-CODE-Grey-CODE-Knitted-Skinny-Trousers/p/1000007633634?gclid=CjwKCAjwoc_8BRAcEiwAzJevteIlw2aajv1MYXXK6POAKwY15o14bKquDNI_inRV9JuOEASD5ke4nhoCwx8QAvD_BwE'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+            <button onclick="document.location='https://www.lifestylestores.com/in/en/SHOP-CODE-Grey-CODE-Knitted-Skinny-Trousers/p/1000007633634?gclid=CjwKCAjwoc_8BRAcEiwAzJevteIlw2aajv1MYXXK6POAKwY15o14bKquDNI_inRV9JuOEASD5ke4nhoCwx8QAvD_BwE'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+        
+            <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\pants\pn.jpg"  style="border-radius: 2%;"width="85%" height="57%">
+                <button onclick="document.location='https://www.aliexpress.com/i/4000611019475.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+                <button onclick="document.location='https://www.aliexpress.com/i/4000611019475.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+            
+            </td>
+    </tr>
+    
+    <tr>
+    <td align="center"><b><font size="4">FORMAL PANT <br>LIGHT GRAY</font></b></td>
+    <td align="center"><b><font size="4">FORMAL PANT <br>SHADED GRAY</font></b></td>
+    <td align="center"><b><font size="4">FORMAL PANT <br>DARK SHADED GRAY</font></b></td>
+    </tr>
+    
+    <tr>
+    <td align="center">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    </td>
+    <td align="center">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    </td>
+    <td align="center">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    </td>
+    
+    <tr>
+    <td align="center"><font size="4" color="green">Price: INR 1150/-</font></td>
+    <td align="center"><font size="4" color="green">Price: INR 1190/-</font></td>
+    <td align="center"><font size="4" color="green">Price: INR 1150/-</font></td>
+    </tr>
+    
+    
+    
+    <tr>
+    <td width="25%" align="center" class="zoom" ><img src="C:\Users\admin\Desktop\site\zubba\z.jpg" style="border-radius: 2%;"  width="85%">
+        <button onclick="document.location='https://www.aliexpress.com/i/4000294176144.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+        <button onclick="document.location='https://www.aliexpress.com/i/4000294176144.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+    
+        <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\zubba\zz.jpg" style="border-radius: 2%;" width="85%">
+            <button onclick="document.location='https://www.aliexpress.com/i/4000161675824.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+            <button onclick="document.location='https://www.aliexpress.com/i/4000161675824.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+        
+            <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\zubba\zzz.jpg"  style="border-radius: 2%;" width="85%" height="45%">
+                <button onclick="document.location='https://www.alibaba.com/product-detail/Good-Quality-Men-s-Moroccan-Gold_60813243738.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+                <button onclick="document.location='https://www.alibaba.com/product-detail/Good-Quality-Men-s-Moroccan-Gold_60813243738.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+            
+            </td>
+    </tr>
+    
+    <tr>
+    <td align="center"><b><font size="4">ARBIC CULTURE <br>SHADED GREEN</font></b></td>
+    <td align="center"><b><font size="4">ARBIC CULTURE <br>BLACK</font></b></td>
+    <td align="center"><b><font size="4">ARBIC CULTURE <br>TWINK BLACK</font></b></td>
+    </tr>
+    
+    <tr>
+    <td align="center">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    </td>
+    <td align="center">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked" ></span>
+    </td>
+    <td align="center">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked" ></span>
+    <span class="fa fa-star checked"></span>
+    </td>
+    
+    <tr>
+    <td align="center"><font size="4" color="green">Price: INR 5000/-</font></td>
+    <td align="center"><font size="4" color="green">Price: INR 5909/-</font></td>
+    <td align="center"><font size="4" color="green">Price: INR 5660/-</font></td>
+    </tr>
+    
+    
+    
+    <tr>
+    <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\atri\track.jpg"  style="border-radius: 2%;"width="85%"height="120%">
+    
+        <button onclick="document.location='https://classyby.com/products/custom-grey-tan-and-slate-groom-suit-for-men-wedding-notch-lapel-formal-prom-suit-two-pieces'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+        <button onclick="document.location='https://classyby.com/products/custom-grey-tan-and-slate-groom-suit-for-men-wedding-notch-lapel-formal-prom-suit-two-pieces'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+        
+         <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\atri\track2.jpg"  style="border-radius: 2%;"width="85%" height="100%">
+        <button onclick="document.location='https://www.ebay.co.uk/itm/Men-Black-Suits-Grooms-Wedding-Business-Formal-Suits-Evening-Party-Suits-UK-/123756573990'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+        <button onclick="document.location='https://www.ebay.co.uk/itm/Men-Black-Suits-Grooms-Wedding-Business-Formal-Suits-Evening-Party-Suits-UK-/123756573990'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+    
+        <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\atri\track3.jpg"  style="border-radius: 2%;"width="85%" >
+        <button onclick="document.location='https://www.myntra.com/suits/louis-philippe/louis-philippe-men-beige-self-design-single-breasted-slim-fit-formal-suit/8340285/buy'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+        <button onclick="document.location='https://www.myntra.com/suits/louis-philippe/louis-philippe-men-beige-self-design-single-breasted-slim-fit-formal-suit/8340285/buy'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+    
+    </td>
+    </tr>
+    
+    <tr>
+    <td align="center"><b><font size="4">ATRI <br>WHITE</font></b></td>
+    <td align="center"><b><font size="4">ATRI <br>BLACK</font></b></td>
+    <td align="center"><b><font size="4">ATRI <br></font></b></td>
+    </tr>
+    
+    <tr>
+    <td align="center">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    </td>
+    <td align="center">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    </td>
+    <td align="center">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    </td>
+    
+    <tr>
+    <td align="center"><font size="4" color="green">Price: INR 30/-</font></td>
+    <td align="center"><font size="4" color="green">Price: INR 90/-</font></td>
+    <td align="center"><font size="4" color="green">Price: INR 30/-</font></td>
+    </tr>
+
+    
+    <tr>
+        <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\t shirt\t4.jpg" style="border-radius: 2%;" width="85%"height="150%">
+            <button onclick="document.location='https://www.indiamart.com/proddetail/men-s-fancy-t-shirt-11894800497.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+            <button onclick="document.location='https://www.indiamart.com/proddetail/men-s-fancy-t-shirt-11894800497.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+        
+            <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\t shirt\t5.jpg"  style="border-radius: 2%;"width="85%" height="150%">
+                <button onclick="document.location='https://www.indiamart.com/proddetail/men-s-fancy-t-shirt-11894800497.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+                <button onclick="document.location='https://www.indiamart.com/proddetail/men-s-fancy-t-shirt-11894800497.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+            
+                <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\t shirt\t3.jpg" style="border-radius: 2%;" width="85%" height="45%">
+                    <button onclick="document.location='https://www.indiamart.com/proddetail/men-s-fancy-t-shirt-11894800497.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+                    <button onclick="document.location='https://www.indiamart.com/proddetail/men-s-fancy-t-shirt-11894800497.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+                
+                </td>
+        </tr>
+        
+        <tr>
+        <td align="center"><b><font size="4">T-SHIRT<br>SHADED NAVY</font></b></td>
+        <td align="center"><b><font size="4">T-SHIRT <br>COMBO BLACK & WHITE</font></b></td>
+        <td align="center"><b><font size="4">T-SHIRT<br>COMBO BLACK & BROWN</font></b></td>
+        </tr>
+        
+        <tr>
+        <td align="center">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        </td>
+        <td align="center">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        </td>
+        <td align="center">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        </td>
+        
+        <tr>
+        <td align="center"><font size="4" color="green">Price: INR 1130/-</font></td>
+        <td align="center"><font size="4" color="green">Price: INR 1190/-</font></td>
+        <td align="center"><font size="4" color="green">Price: INR 1130/-</font></td>
+        </tr>
+    
+        
+
+
+        
+    <tr>
+        <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\zubbaaa\oihh.jpg" style="border-radius: 2%;" width="85%"height="30%" >
+            <button onclick="document.location='https://www.alibaba.com/product-detail/Arabic-thobe-jubba-for-men-abaya_62155003371.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+            <button onclick="document.location='https://www.alibaba.com/product-detail/Arabic-thobe-jubba-for-men-abaya_62155003371.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+        
+            <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\zubbaaa\hhh.jpg"  style="border-radius: 2%;"width="85%" height="80%">
+    
+                <button onclick="document.location='https://www.alibaba.com/product-detail/Arabic-thobe-jubba-for-men-abaya_62155003371.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+                <button onclick="document.location='https://www.alibaba.com/product-detail/Arabic-thobe-jubba-for-men-abaya_62155003371.html'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+                        <td width="25%" align="center" class="zoom"><img src="C:\Users\admin\Desktop\site\zubbaaa\jjj.jpg"  style="border-radius: 2%;"width="85%" height="57%">
+                            <button onclick="document.location='https://islamicshop.in/men/bisht-for-men-islamic-clothing'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >BUY NOW</button>
+                            <button onclick="document.location='https://islamicshop.in/men/bisht-for-men-islamic-clothing'"style="background-color: #C6C5C5; color:white; width: 200px; height: 40px;font-size: 20px " >ADD TO CART</button>
+                        
+                        </td>
+        </tr>
+        
+        <tr>
+        <td align="center"><b><font size="4">TAWB<br>WHITE</font></b></td>
+        <td align="center"><b><font size="4">TAWB <br>SHADED BROWN</font></b></td>
+        <td align="center"><b><font size="4">TAWB <br>GOLDEN BIST</font></b></td>
+        </tr>
+        
+        <tr>
+        <td align="center">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        </td>
+        <td align="center">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        </td>
+        <td align="center">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        </td>
+        
+        <tr>
+        <td align="center"><font size="4" color="green">Price: INR $561,50/-</font></td>
+        <td align="center"><font size="4" color="green">Price: INR $56,190/-</font></td>
+        <td align="center"><font size="4" color="green">Price: INR $59,150/-</font></td>
+        </tr>
+        
+        
+        
+
+
+</table>
+<footer>
+    <div class="maininfo">
+        <div class="first side">
+            <h2>About us</h2>
+            <div class="info">
+                <p>We are the web developers. From ADCET, Ashta. 
+                   We are student of Computer Science and Engineering Department.
+                This is our first web.</p>
+                <div class="social">
+                    <a href="#"><span class="fab fa-facebook-f"></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="#"><span class="fab fa-instagram"></span></a>
+                    <a href="#"><span class="fab fa-youtube"></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="second side">
+            <h2>Address</h2>
+            <div class="info">
+                <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>&nbsp
+                    <span class="text">ADCET, Ashta.</span>
+                </div><br>
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>&nbsp
+                    <span class="text">+91 8446725772</span>
+                </div><br>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>&nbsp
+                    <span class="text">priyankavhargar@gmail.com</span>
+                </div><br>
+            </div>
+        </div>
+        <div class="third side">
+            <h2>Contact Us</h2>
+            <div class="info">
+                <form action="#">
+                    <div class="email">
+                        <div class="text">Email *</div>
+                        <input type="email" required>
+                    </div><br>
+                    <div class="msg">
+                        <div class="text">Message *</div>
+                        <textarea rows="2" cols="25" required></textarea>
+                    </div><br>
+                    <div class="btn">
+                        <button type="submit">Send</button>
+                    </div><br>
+                </form>
+            </div>
+        </div>
+    </div><br><br><br>
+    <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+</footer>
+
+
+
+    
+
+</body>
+</html>
+
+
+
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 4000);    
+    }
+</script>
